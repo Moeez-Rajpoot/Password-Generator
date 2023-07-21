@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="myclass">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">PassWord</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#000b76" fill-opacity="1" d="M0,64L80,106.7C160,149,320,235,480,229.3C640,224,800,128,960,122.7C1120,117,1280,203,1360,245.3L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+        </svg>
+
+        <div class="container">
+            <h2>Generate a <div id="inner"> <span>Random Password </span></div></h2>
+            <div class="rem">
+                <input id="input" type="text" placeholder="Password">
+                <img src="./images/copy.png"  onclick="copyPassword()" id="img1">
+            </div>
+            <div class="generate">
+                <button onclick="Generate()"> Generate Password </button>
+                <img src="./images/gen.png" id="img2">
+                
+            </div>
+        </div>
+
+        <script src="./logic.js"></script>
+
+        
+    
+</body>
+</html>
