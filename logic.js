@@ -28,6 +28,7 @@ function Generate() {
       .catch((error) => {
         console.error("Failed to copy text to clipboard:", error);
       });
+      document.getElementById("text").style.display="block";
   }
   
     
